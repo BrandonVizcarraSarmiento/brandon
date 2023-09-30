@@ -28,13 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.hola = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(438, 288);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 0;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // hola
+            // 
+            this.hola.AutoSize = true;
+            this.hola.Location = new System.Drawing.Point(367, 55);
+            this.hola.Name = "hola";
+            this.hola.Size = new System.Drawing.Size(80, 13);
+            this.hola.TabIndex = 1;
+            this.hola.Text = "HOLA MUNDO";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.hola);
+            this.Controls.Add(this.btnSalir);
+            this.Name = "Form1";
+            this.Text = "hola";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label hola;
     }
 }
 
